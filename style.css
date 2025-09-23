@@ -1,0 +1,107 @@
+/*==== 전체 서식 ====*/
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'LeeSunShin'; }
+html, body { height: 100%; }
+body { position: relative; }
+
+/*==== 메인 ====*/
+/* 배경 */
+body.index { background-color: black; }
+
+/* 노이즈 캔버스 */
+#noise
+{
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 이미지 박스 */
+.mainImg
+{
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/resources/mainImg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* 버튼 */
+.exit
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+/*==== 팝업 ====*/
+/* 배경 */
+.wrap
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white; /* 팝업은 흰색 */
+}
+
+/* 텍스트 */
+p
+{
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+.title { position: relative; }
+.text { text-align: center; height: auto; }
+
+/* 버튼 */
+.btnWrap
+{
+    width: 100%;
+    height: 100px;
+
+    background-color: #f0f0f0;
+    position: relative;
+}
+.btn
+{
+    height: 24px;
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.closeBtn
+{
+    width: 24px;
+    top: 10px;
+    right: 10px;
+}
+.obey
+{
+    width: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    background-color: #ccc;
+}
