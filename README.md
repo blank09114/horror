@@ -38,4 +38,6 @@
 - **Canvas API**: 픽셀 단위 랜덤 grayscale 노이즈 생성  
 - **Window API**: `window.open` + `postMessage`로 팝업 메시지 전달  
 - **Audio API**: `HTMLAudioElement` (`play`, `loop`, `currentTime`) 활용  
-- **Event Handling**: `DOMContentLoaded`, `click`, `resize`, `message` 등  
+- **Event Handling**: `DOMContentLoaded`, `click`, `resize`, `message` 등
+
+_사이트 기획과 디자인은 클라이언트 측에서 제공했습니다._
